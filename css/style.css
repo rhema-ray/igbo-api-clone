@@ -1,0 +1,238 @@
+/* resets */
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    scroll-behavior: smooth;
+    /* outline: 1px solid red; */
+}
+:root{
+    --c1:#1A202C;
+    --c2:#1f2937;
+    --c3:#F2F7FF;
+    --c4:#22C55E;
+    --mf:airbnb cereal;
+}
+
+/* navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.9875em 2.8125em;
+    align-content: center;
+    height: 47px;
+}
+
+/* logo */
+.logo {
+    font-size: 32px;
+    font-family: nunito;
+    font-weight: 700;
+    color: #1f2937;
+}
+.logo #igbo{    
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: transparent;
+    background: linear-gradient(45deg, #7FBC97, #7AE3A4);
+    background-size: 100%;
+    font-size: 35px;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+nav .nav-menu{
+    display: flex;
+    /* align-content: center; */
+    width: 550px;
+    justify-content: space-between;
+    font-family:roboto ;
+    font-weight: 500;
+    font-size: 19px;
+}
+nav .nav-menu li{
+    height:fit-content;
+    margin: auto 0;
+}
+
+nav .nav-menu a{
+    color: #1f2937;
+    transition: all .3 ease-in-out;
+}
+
+/* try it */
+    nav .nav-menu #try-it{
+        height: 44px;
+        width: 111px;
+        background: #22C55E;
+        display: flex;
+        border-radius: 43px;
+    }
+    nav .nav-menu #try-it a{
+        color: #ffff;
+        margin: auto;
+    }
+
+/* drop down */
+nav .nav-menu .dropdown {
+    position: relative;
+    display: inline-block;
+    color: #1f2937;
+    
+}
+
+nav .nav-menu .dropdown #main-btn{
+    font-family:roboto ;
+    font-weight: 500;
+    font-size: 19px;
+    color: #1f2937;
+    background: none;
+    border: none;
+    width: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+nav .nav-menu .dropdown #main-btn svg{
+    margin: auto 0;
+}
+
+nav .nav-menu .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    visibility: hidden;
+    position: absolute;
+    right: -24px;
+    height: 111px;
+    width: 226px;
+    top: 50px;
+    background: #ffff;
+    min-width: 160px;
+    border: .3px solid #1a202c45;
+    border-radius: 14px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.05);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+/* drop down visible  */
+nav .nav-menu .dropdown-content  button{
+    width: 100%;
+    position: relative;
+    display: flex;
+    font-family: var(--mf);
+    color: var(--c1);
+    font-weight: 500;
+    height: 26px;
+    opacity: .8;
+    border: none;
+    font-size: 16px;
+    background: none;
+}
+
+/* drop down children */
+nav .nav-menu .dropdown-content  button *{
+    margin: auto 0;
+}
+/* drop down children first element */
+nav .nav-menu .dropdown-content  button:nth-child(1){
+    margin-bottom: 10px;
+}
+nav .nav-menu .dropdown-content  button span:nth-child(1){
+    width: 22px;
+    font-size: 14px;
+    font-weight: 800;
+    opacity: .6;
+}
+nav .nav-menu .dropdown-content  button span:nth-child(2){
+    line-height: 16px;
+}
+nav .nav-menu .dropdown-content  button span:nth-child(2)::before{
+    content: "";
+    margin-left: 10px;
+}
+nav .nav-menu .dropdown-content  button span:nth-child(3){
+    /* justify-self: flex-end; */
+    position: absolute;
+    margin-top: 2.5px;
+    right: 0;
+}
+nav .nav-menu .dropdown:focus-within  .dropdown-content {
+    visibility: visible ;
+}
+
+/* hovering animations for nav bar */
+nav .nav-menu li a:hover{
+    opacity: .8;
+    }
+
+/* body - main theme */
+.section-1{
+    margin-top: 131px;
+    display: flex;
+    padding: 0 30px;
+    max-height: 415px;
+    /* width: 100px; */
+}
+.section-1 .theme{
+    z-index: 1;
+}   
+.section-1 .theme h1{
+    font-family: airbnb cereal;
+    font-size: 60px;
+    font-weight:700;
+    width: 413px;
+    color: var(--c1);
+}
+.section-1 .theme h1 .gr{
+    color: var(--c4);
+}
+
+.section-1 .theme p{
+    font-family: mada;
+    font-size: 16px;
+    margin: 20px 0 35px;
+    font-weight:400;
+    width: 759px;
+    color: var(--c1);
+}
+
+/* links */
+.section-1 .theme .links a{
+    font-family: airbnb cereal;
+    font-size: 20px;
+    font-weight: 600;
+    width: 257px;
+    display: inline-flex;
+    place-content: center;
+    height: 48px;
+    color: var(--c1);
+    border: 2px solid var(--c4) ;
+    border-radius: 40px;
+}
+.section-1 .theme .links a span, .section-1 .theme .links a svg{
+    margin: auto 0;
+}
+.section-1 .theme .links a svg{
+    margin-left: 5px;
+}
+
+.section-1 .theme .links a:nth-child(1){
+    color: var(--c3);
+    margin-right: 36px;
+    background: var(--c4);
+}
+
+.section-1 .img{
+    position: relative;
+    top: -123px;
+    left: -97px;
+    z-index: 0;
+}
