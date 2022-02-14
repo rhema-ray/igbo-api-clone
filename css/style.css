@@ -14,6 +14,7 @@
     --c3:#F2F7FF;
     --c4:#22C55E;
     --mf:airbnb cereal;
+    --sf:mada;
 }
 
 /* navbar */
@@ -235,4 +236,33 @@ nav .nav-menu li a:hover{
     top: -123px;
     left: -97px;
     z-index: 0;
+}
+
+
+/* section 2 */
+.section-2{
+    margin: 180px 52px 0;
+}
+
+.section-2 .text{
+    width: 740px;
+}
+
+.section-2 .text h1{
+    font-family: var(--mf);
+    color: var(--c4);
+    font-size: 50px;
+    font-weight: 700;
+}
+.section-2 .text p{
+    font-family: var(--sf);
+    font-size: 19px;
+    margin-top: 30px;
+    font-weight: normal;
+    color: var(--c1);
+}
+
+.section-2 .features-list{
+    max-width: 1263px;
+    margin: 120px auto 0;
 }
