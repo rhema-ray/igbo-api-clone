@@ -241,7 +241,7 @@ nav .nav-menu li a:hover{
 
 /* section 2 */
 .section-2{
-    margin: 180px 52px 0;
+    margin: 160px 52px 0;
 }
 
 .section-2 .text{
@@ -251,18 +251,28 @@ nav .nav-menu li a:hover{
 .section-2 .text h1{
     font-family: var(--mf);
     color: var(--c4);
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
 }
 .section-2 .text p{
     font-family: var(--sf);
-    font-size: 19px;
-    margin-top: 30px;
+    font-size: 16px;
+    margin-top: 25px;
     font-weight: normal;
     color: var(--c1);
 }
 
+/* parent div for all the features */
 .section-2 .features-list{
     max-width: 1263px;
-    margin: 120px auto 0;
+    margin: 70px auto 0;
+}
+
+/* each feature styling */
+.section-2 .features-list .feature{
+    width: 253px;
+    height: 326px;
+    border-radius: 50px 0 50px 0;
+    background: #E5E7EB;
+    box-shadow: 0 10px 12px rgba(0,0,0,0.05);
 }
