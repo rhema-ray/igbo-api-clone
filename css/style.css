@@ -264,8 +264,10 @@ nav .nav-menu li a:hover{
 
 /* parent div for all the features */
 .section-2 .features-list{
-    max-width: 1263px;
+    min-width: 1263px;
     margin: 70px auto 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* each feature styling */
@@ -275,4 +277,51 @@ nav .nav-menu li a:hover{
     border-radius: 50px 0 50px 0;
     background: #E5E7EB;
     box-shadow: 0 10px 12px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+/* each feature icon styling */
+.section-2 .features-list .feature .icon{
+    width: 67px;
+    height: 71px;
+    background: #FFFFFF;
+    border-radius: 26px;
+    display: grid;
+    place-content: center;
+    margin-left: 24px;
+    margin-top: 42px;
+}
+
+/* each feature icon svg */
+.section-2 .features-list .feature .icon svg{
+    width: 40.64px;
+    height: auto;
+}
+.section-2 .features-list .feature:nth-child(2) .icon svg{
+    width: 30px;
+}
+.section-2 .features-list .feature:nth-child(3) .icon svg{
+    width: 29.54px;
+}
+.section-2 .features-list .feature:nth-child(4) .icon svg{
+    width: 40px;
+}
+
+/* each feature body */
+.section-2 .features-list .feature div:nth-child(2){
+    margin: 24px auto auto;
+    width: 196px;
+    font-family: mada;
+    color: #1A202C;
+    font-size: 16px;
+}
+
+/* each feature header */
+.section-2 .features-list .feature div:nth-child(2) h1{
+    margin: 0 0 14px;
+    font-family: airbnb cereal;
+    font-weight: 600;
+    font-size: 29px;
+    color: #1A202C;
 }
