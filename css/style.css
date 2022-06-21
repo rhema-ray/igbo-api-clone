@@ -1,4 +1,4 @@
-/* resets */
+/* resets and global */
 *{
     text-decoration: none;
     box-sizing: border-box;
@@ -15,6 +15,25 @@
     --c4:#22C55E;
     --mf:airbnb cereal;
     --sf:mada;
+}
+
+.text-header{
+    font-family: var(--mf);
+    color: var(--c4);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.text-p{
+    font-family: var(--sf);
+    font-size: 16px;
+    margin-top: 25px;
+    font-weight: normal;
+    color: var(--c1);
+}
+
+.text{
+    width: 740px;
 }
 
 /* navbar */
@@ -176,10 +195,11 @@ nav .nav-menu li a:hover{
 
 /* body - main theme */
 .section-1{
-    margin-top: 131px;
+    margin-top: 80px;
     display: flex;
     padding: 0 30px;
     max-height: 415px;
+    justify-content: space-between;
     /* width: 100px; */
 }
 .section-1 .theme{
@@ -201,7 +221,7 @@ nav .nav-menu li a:hover{
     font-size: 16px;
     margin: 20px 0 35px;
     font-weight:400;
-    width: 759px;
+    width: 570px;
     color: var(--c1);
 }
 
@@ -233,8 +253,10 @@ nav .nav-menu li a:hover{
 
 .section-1 .img{
     position: relative;
-    top: -123px;
-    left: -97px;
+    top: -61px;
+    /* left: -97px; */
+    width: fit-content;
+    height: fit-content;
     z-index: 0;
 }
 
@@ -244,23 +266,6 @@ nav .nav-menu li a:hover{
     margin: 160px 52px 0;
 }
 
-.section-2 .text{
-    width: 740px;
-}
-
-.section-2 .text h1{
-    font-family: var(--mf);
-    color: var(--c4);
-    font-size: 40px;
-    font-weight: 700;
-}
-.section-2 .text p{
-    font-family: var(--sf);
-    font-size: 16px;
-    margin-top: 25px;
-    font-weight: normal;
-    color: var(--c1);
-}
 
 /* parent div for all the features */
 .section-2 .features-list{
@@ -325,3 +330,17 @@ nav .nav-menu li a:hover{
     font-size: 29px;
     color: #1A202C;
 }
+
+/* section 3 */
+
+.section-3{
+    margin: 160px 70px 0;
+}
+
+.section-3 .text h2{
+
+}
+
+
+
+
