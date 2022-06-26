@@ -15,6 +15,11 @@
     --c4:#22C55E;
     --mf:airbnb cereal;
     --sf:mada;
+    --test: 95px 20px;
+}
+
+h1, h2, h3, h4{
+    font-family: var(--mf);
 }
 
 .text-header{
@@ -337,9 +342,40 @@ nav .nav-menu li a:hover{
     margin: 160px 70px 0;
 }
 
-.section-3 .text h2{
-
+.section-3 .test{
+    margin: 5% auto 0;
+    background-color: #6B7280;
+    border-radius: 10px;
+    height: 508px;
+    padding:2%;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
 }
+
+.section-3 .test .input{
+    background: #ffff;
+    padding: 2%;
+    width: 49%;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: -13%;
+}
+
+.section-3 .test .output{
+    background: var(--c2);
+    padding: 2%;
+    width: 49%;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
 
 
 
