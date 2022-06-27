@@ -1,5 +1,5 @@
 /* resets and global */
-*{
+* {
     text-decoration: none;
     box-sizing: border-box;
     margin: 0;
@@ -8,28 +8,41 @@
     scroll-behavior: smooth;
     /* outline: 1px solid red; */
 }
-:root{
-    --c1:#1A202C;
-    --c2:#1f2937;
-    --c3:#F2F7FF;
-    --c4:#22C55E;
-    --mf:airbnb cereal;
-    --sf:mada;
+
+body {
+    font-size: 62.5%;
+}
+
+:root {
+    --c1: #1A202C;
+    --c2: #1f2937;
+    --c3: #F2F7FF;
+    --c4: #22C55E;
+    --mf: airbnb cereal;
+    --sf: mada;
     --test: 95px 20px;
 }
 
-h1, h2, h3, h4{
+h1,
+h2,
+h3,
+h4 {
     font-family: var(--mf);
 }
 
-.text-header{
+p,
+a {
+    font-family: var(--sf);
+}
+
+.text-header {
     font-family: var(--mf);
     color: var(--c4);
     font-size: 40px;
     font-weight: 700;
 }
 
-.text-p{
+.text-p {
     font-family: var(--sf);
     font-size: 16px;
     margin-top: 25px;
@@ -37,12 +50,12 @@ h1, h2, h3, h4{
     color: var(--c1);
 }
 
-.text{
+.text {
     width: 740px;
 }
 
 /* navbar */
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     margin: 1.9875em 2.8125em;
@@ -57,7 +70,8 @@ nav{
     font-weight: 700;
     color: #1f2937;
 }
-.logo #igbo{    
+
+.logo #igbo {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-color: transparent;
     background: linear-gradient(45deg, #7FBC97, #7AE3A4);
@@ -70,48 +84,50 @@ nav{
 
 }
 
-nav .nav-menu{
+nav .nav-menu {
     display: flex;
     /* align-content: center; */
     width: 550px;
     justify-content: space-between;
-    font-family:roboto ;
+    font-family: roboto;
     font-weight: 500;
     font-size: 19px;
 }
-nav .nav-menu li{
-    height:fit-content;
+
+nav .nav-menu li {
+    height: fit-content;
     margin: auto 0;
 }
 
-nav .nav-menu a{
+nav .nav-menu a {
     color: #1f2937;
     transition: all .3 ease-in-out;
 }
 
 /* try it */
-    nav .nav-menu #try-it{
-        height: 44px;
-        width: 111px;
-        background: #22C55E;
-        display: flex;
-        border-radius: 43px;
-    }
-    nav .nav-menu #try-it a{
-        color: #ffff;
-        margin: auto;
-    }
+nav .nav-menu #try-it {
+    height: 44px;
+    width: 111px;
+    background: #22C55E;
+    display: flex;
+    border-radius: 43px;
+}
+
+nav .nav-menu #try-it a {
+    color: #ffff;
+    margin: auto;
+}
 
 /* drop down */
 nav .nav-menu .dropdown {
     position: relative;
     display: inline-block;
     color: #1f2937;
-    
+
 }
 
-nav .nav-menu .dropdown #main-btn{
-    font-family:roboto ;
+nav .nav-menu .dropdown #main-btn {
+    font-family: roboto;
     font-weight: 500;
     font-size: 19px;
     color: #1f2937;
@@ -124,7 +140,7 @@ nav .nav-menu .dropdown #main-btn{
     align-content: center;
 }
 
-nav .nav-menu .dropdown #main-btn svg{
+nav .nav-menu .dropdown #main-btn svg {
     margin: auto 0;
 }
 
@@ -142,13 +158,13 @@ nav .nav-menu .dropdown-content {
     min-width: 160px;
     border: .3px solid #1a202c45;
     border-radius: 14px;
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
     padding: 12px 16px;
     z-index: 1;
 }
 
 /* drop down visible  */
-nav .nav-menu .dropdown-content  button{
+nav .nav-menu .dropdown-content button {
     width: 100%;
     position: relative;
     display: flex;
@@ -163,43 +179,49 @@ nav .nav-menu .dropdown-content  button{
 }
 
 /* drop down children */
-nav .nav-menu .dropdown-content  button *{
+nav .nav-menu .dropdown-content button * {
     margin: auto 0;
 }
+
 /* drop down children first element */
-nav .nav-menu .dropdown-content  button:nth-child(1){
+nav .nav-menu .dropdown-content button:nth-child(1) {
     margin-bottom: 10px;
 }
-nav .nav-menu .dropdown-content  button span:nth-child(1){
+
+nav .nav-menu .dropdown-content button span:nth-child(1) {
     width: 22px;
     font-size: 14px;
     font-weight: 800;
     opacity: .6;
 }
-nav .nav-menu .dropdown-content  button span:nth-child(2){
+
+nav .nav-menu .dropdown-content button span:nth-child(2) {
     line-height: 16px;
 }
-nav .nav-menu .dropdown-content  button span:nth-child(2)::before{
+
+nav .nav-menu .dropdown-content button span:nth-child(2)::before {
     content: "";
     margin-left: 10px;
 }
-nav .nav-menu .dropdown-content  button span:nth-child(3){
+
+nav .nav-menu .dropdown-content button span:nth-child(3) {
     /* justify-self: flex-end; */
     position: absolute;
     margin-top: 2.5px;
     right: 0;
 }
-nav .nav-menu .dropdown:focus-within  .dropdown-content {
-    visibility: visible ;
+
+nav .nav-menu .dropdown:focus-within .dropdown-content {
+    visibility: visible;
 }
 
 /* hovering animations for nav bar */
-nav .nav-menu li a:hover{
+nav .nav-menu li a:hover {
     opacity: .8;
-    }
+}
 
 /* body - main theme */
-.section-1{
+.section-1 {
     margin-top: 80px;
     display: flex;
     padding: 0 30px;
@@ -207,31 +229,34 @@ nav .nav-menu li a:hover{
     justify-content: space-between;
     /* width: 100px; */
 }
-.section-1 .theme{
+
+.section-1 .theme {
     z-index: 1;
-}   
-.section-1 .theme h1{
+}
+
+.section-1 .theme h1 {
     font-family: airbnb cereal;
     font-size: 60px;
-    font-weight:700;
+    font-weight: 700;
     width: 413px;
     color: var(--c1);
 }
-.section-1 .theme h1 .gr{
+
+.section-1 .theme h1 .gr {
     color: var(--c4);
 }
 
-.section-1 .theme p{
+.section-1 .theme p {
     font-family: mada;
     font-size: 16px;
     margin: 20px 0 35px;
-    font-weight:400;
+    font-weight: 400;
     width: 570px;
     color: var(--c1);
 }
 
 /* links */
-.section-1 .theme .links a{
+.section-1 .theme .links a {
     font-family: airbnb cereal;
     font-size: 20px;
     font-weight: 600;
@@ -240,23 +265,26 @@ nav .nav-menu li a:hover{
     place-content: center;
     height: 48px;
     color: var(--c1);
-    border: 2px solid var(--c4) ;
+    border: 2px solid var(--c4);
     border-radius: 40px;
 }
-.section-1 .theme .links a span, .section-1 .theme .links a svg{
+
+.section-1 .theme .links a span,
+.section-1 .theme .links a svg {
     margin: auto 0;
 }
-.section-1 .theme .links a svg{
+
+.section-1 .theme .links a svg {
     margin-left: 5px;
 }
 
-.section-1 .theme .links a:nth-child(1){
+.section-1 .theme .links a:nth-child(1) {
     color: var(--c3);
     margin-right: 36px;
     background: var(--c4);
 }
 
-.section-1 .img{
+.section-1 .img {
     position: relative;
     top: -61px;
     /* left: -97px; */
@@ -267,13 +295,13 @@ nav .nav-menu li a:hover{
 
 
 /* section 2 */
-.section-2{
+.section-2 {
     margin: 160px 52px 0;
 }
 
 
 /* parent div for all the features */
-.section-2 .features-list{
+.section-2 .features-list {
     min-width: 1263px;
     margin: 70px auto 0;
     display: flex;
@@ -281,18 +309,18 @@ nav .nav-menu li a:hover{
 }
 
 /* each feature styling */
-.section-2 .features-list .feature{
+.section-2 .features-list .feature {
     width: 253px;
     height: 326px;
     border-radius: 50px 0 50px 0;
     background: #E5E7EB;
-    box-shadow: 0 10px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
 }
 
 /* each feature icon styling */
-.section-2 .features-list .feature .icon{
+.section-2 .features-list .feature .icon {
     width: 67px;
     height: 71px;
     background: #FFFFFF;
@@ -304,22 +332,25 @@ nav .nav-menu li a:hover{
 }
 
 /* each feature icon svg */
-.section-2 .features-list .feature .icon svg{
+.section-2 .features-list .feature .icon svg {
     width: 40.64px;
     height: auto;
 }
-.section-2 .features-list .feature:nth-child(2) .icon svg{
+
+.section-2 .features-list .feature:nth-child(2) .icon svg {
     width: 30px;
 }
-.section-2 .features-list .feature:nth-child(3) .icon svg{
+
+.section-2 .features-list .feature:nth-child(3) .icon svg {
     width: 29.54px;
 }
-.section-2 .features-list .feature:nth-child(4) .icon svg{
+
+.section-2 .features-list .feature:nth-child(4) .icon svg {
     width: 40px;
 }
 
 /* each feature body */
-.section-2 .features-list .feature div:nth-child(2){
+.section-2 .features-list .feature div:nth-child(2) {
     margin: 24px auto auto;
     width: 196px;
     font-family: mada;
@@ -328,32 +359,30 @@ nav .nav-menu li a:hover{
 }
 
 /* each feature header */
-.section-2 .features-list .feature div:nth-child(2) h1{
+.section-2 .features-list .feature div:nth-child(2) h1 {
     margin: 0 0 14px;
-    font-family: airbnb cereal;
-    font-weight: 600;
-    font-size: 29px;
-    color: #1A202C;
+    font-weight: 500;
+    font-size: 1.6em;
 }
 
 /* section 3 */
 
-.section-3{
+.section-3 {
     margin: 160px 70px 0;
 }
 
-.section-3 .test{
+.section-3 .test {
     margin: 5% auto 0;
     background-color: #6B7280;
     border-radius: 10px;
     height: 508px;
-    padding:2%;
+    padding: 2%;
     width: 95%;
     display: flex;
     justify-content: space-between;
 }
 
-.section-3 .test .input{
+.section-3 .test .input {
     background: #ffff;
     padding: 2%;
     width: 49%;
@@ -363,7 +392,76 @@ nav .nav-menu li a:hover{
     top: -13%;
 }
 
-.section-3 .test .output{
+.section-3 .test .input h3 {
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.section-3 .test .input p {
+    font-size: 1.6em;
+    font-weight: 400;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
+.section-3 .test .input form h2 {
+    font-size: 3em;
+    font-weight: 400;
+    margin-top: 8%;
+}
+
+.section-3 .test .input form input#in-form {
+    width: 90%;
+    padding: 1em 2em;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #707070;
+    font-size: 1.7em;
+    margin: 3% 0 0;
+}
+
+.section-3 .test .input form .select {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    margin: 2.5% 0 0;
+}
+
+.section-3 .test .input form .select .option {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+}
+
+.section-3 .test .input form .select .option label {
+    margin-left: 5%;
+    font-size: 1.6em;
+    font-family: var(--sf);
+    font-weight: 500;
+}
+
+.section-3 .test .input .link {
+    margin: 10% 0 9%;
+    width: 100%;
+    padding: 1.2em 1.5em;
+    text-align: center;
+    background: #9f9f9f1f;
+}
+
+.section-3 .test .input .link a {
+    color: #515254;
+    font-size: 1.6em;
+}
+
+.section-3 .test .input p:nth-of-type(2) {
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+/* output */
+.section-3 .test .output {
     background: var(--c2);
     padding: 2%;
     width: 49%;
@@ -371,12 +469,8 @@ nav .nav-menu li a:hover{
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
-
-
-
-
-
-
+.section-3 .test .output output{
+    color: #99DAFF;
+    font: size 2.5em;
+    font-family: var(--mf);
+}
