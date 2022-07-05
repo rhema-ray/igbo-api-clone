@@ -38,13 +38,13 @@ a {
 .text-header {
     font-family: var(--mf);
     color: var(--c4);
-    font-size: 40px;
+    font-size: 3.5em;
     font-weight: 700;
 }
 
 .text-p {
     font-family: var(--sf);
-    font-size: 16px;
+    font-size: 1.6em;
     margin-top: 25px;
     font-weight: normal;
     color: var(--c1);
@@ -54,18 +54,26 @@ a {
     width: 740px;
 }
 
+.landing{
+    height: 100vh;
+}
 /* navbar */
 nav {
     display: flex;
     justify-content: space-between;
-    margin: 1.9875em 2.8125em;
+    margin: 3em 2.8125em 0;
     align-content: center;
-    height: 47px;
+    height: fit-content;
+    /* width: 100vw; */
+    top: 0;
+    background-color: #FFFFFF;
+    /* position: fixed; */
+    /* z-index: 10000000; */
 }
 
 /* logo */
 .logo {
-    font-size: 32px;
+    font-size: 3.2em;
     font-family: nunito;
     font-weight: 700;
     color: #1f2937;
@@ -91,7 +99,7 @@ nav .nav-menu {
     justify-content: space-between;
     font-family: roboto;
     font-weight: 500;
-    font-size: 19px;
+    font-size: 1.9em;
 }
 
 nav .nav-menu li {
@@ -129,7 +137,7 @@ nav .nav-menu .dropdown {
 nav .nav-menu .dropdown #main-btn {
     font-family: roboto;
     font-weight: 500;
-    font-size: 19px;
+    font-size: inherit;
     color: #1f2937;
     background: none;
     border: none;
@@ -469,8 +477,29 @@ nav .nav-menu li a:hover {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
 
-.section-3 .test .output output{
-    color: #99DAFF;
-    font: size 2.5em;
-    font-family: var(--mf);
+
+/**
+*Section 4
+*/
+.section-4{
+    margin: 160px 70px 0;
+}
+.section-4 .mentioned-in{
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    margin: 4% auto 0;
+}
+
+
+/**
+*Section 5
+*/
+.section-5{
+    margin: 160px 70px 0;
+}
+
+.section-5 .main-info{
+    height: 200vh;
+    background: #DAEDAE;
 }
