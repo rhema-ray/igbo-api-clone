@@ -15,24 +15,24 @@
 <body>
 
   <!-- navigation bar -->
-  <nav>
+  <nav class="flex">
     <h1 class="logo"><span id="igbo">igbo</span>API</h1>
-    <div class="nav-menu">
+    <div class="nav-menu flex">
       <li><a href="#features">Feature</a></li>
       <li><a href="">About</a></li>
       <li><a href="">Docs</a></li>
       <li><a href="">Get an API Key</a></li>
-      <li id="try-it"><a href="">Try it Out</a></li>
+      <li id="try-it" class="flex"><a href="">Try it Out</a></li>
       <li class="dropdown">
-        <button id="main-btn">
+        <button id="main-btn" class="flex">
           <span>US</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="13.221" height="7.468" viewBox="0 0 13.221 7.468">
             <path id="Path_47" data-name="Path 47" d="M0,1.354,5.939,6.732l5.939-5.378"
               transform="translate(0.671 -0.613)" fill="none" stroke="#1f2937" stroke-width="2" />
           </svg>
         </button>
-        <div class="dropdown-content">
-          <button>
+        <div class="dropdown-content flex">
+          <button class="flex">
             <span>US</span><span>English</span> <span><svg xmlns="http://www.w3.org/2000/svg" width="18.723"
                 height="12.557" viewBox="0 0 18.723 12.557">
                 <path id="Path_48" data-name="Path 48" d="M972,1179.3l4.845,4.244,9.644-8.447"
@@ -42,7 +42,7 @@
             </span>
           </button>
 
-          <button>
+          <button class="flex">
             <span>NG</span><span>IGBO</span> <span style="visibility: hidden;"><svg xmlns="http://www.w3.org/2000/svg"
                 width="18.723" height="12.557" viewBox="0 0 18.723 12.557">
                 <path id="Path_48" data-name="Path 48" d="M972,1179.3l4.845,4.244,9.644-8.447"
@@ -57,7 +57,7 @@
   </nav>
 
   <!-- landing page -->
-  <section class="section-1">
+  <section class="section-1 flex">
     <div class="theme">
       <h1>The First African Language <span class="gr">API</span></h1>
       <p>Igbo is a rich Nigerian language that’s spoken by approximately 45 million people. Unfortunately, despite the
@@ -211,8 +211,8 @@
     </div>
 
     <!-- features list parent div -->
-    <div class="features-list" id="features">
-      <div class="feature">
+    <div class="features-list flex" id="features">
+      <div class="feature flex">
         <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="42.264" height="37.784"
             viewBox="0 0 42.264 37.784">
             <g id="volume" transform="translate(0.65 0.65)">
@@ -240,7 +240,7 @@
           <p>Each word is provided with at least one definition.</p>
         </div>
       </div>
-      <div class="feature">
+      <div class="feature flex">
         <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="47" height="40" viewBox="0 0 47 40">
             <g id="Group_4" data-name="Group 4" transform="translate(-0.049 -0.039)">
               <rect id="Rectangle_1475" data-name="Rectangle 1475" width="47" height="40" rx="4"
@@ -270,7 +270,7 @@
           <p>Certain words are accompanied by contextual examples</p>
         </div>
       </div>
-      <div class="feature">
+      <div class="feature flex">
         <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="37.025" height="27.481"
             viewBox="0 0 37.025 27.481">
             <path id="Path_46" data-name="Path 46" d="M972,1184.545l9.544,9.544,19-19"
@@ -283,7 +283,7 @@
           <p>Diacritics are used to convey the different tones present in the Igbo language.</p>
         </div>
       </div>
-      <div class="feature">
+      <div class="feature flex">
         <div class="icon"><svg id="Group_3" data-name="Group 3" xmlns="http://www.w3.org/2000/svg" width="42"
             height="38" viewBox="0 0 42 38">
             <g id="Rectangle_1474" data-name="Rectangle 1474" transform="translate(16)" fill="none" stroke="#22c55e"
@@ -313,7 +313,7 @@
     </div>
 
 
-    <div class="test">
+    <div class="test flex">
       <div class="input">
         <h3>
           Enter a word below
@@ -322,10 +322,10 @@
         <form action="">
           <h2>Flags</h2>
           <input type="text" name="" id="in-form" placeholder="i.e. please or biko">
-          <div class="select">
-            <div class="option"><input type="checkbox" name="dialects" id=""><label for="dialects">Dialects</label>
+          <div class="select flex">
+            <div class="option flex"><input type="checkbox" name="dialects" id=""><label for="dialects">Dialects</label>
             </div>
-            <div class="option"><input type="checkbox" name="examples" id=""><label for="examples">Examples</label>
+            <div class="option flex"><input type="checkbox" name="examples" id=""><label for="examples">Examples</label>
             </div>
           </div>
         </form>
@@ -345,7 +345,7 @@
 
   <section class="section-4">
     <h1 class="text-header">Mentioned In</h1>
-    <div class="mentioned-in">
+    <div class="mentioned-in flex">
       <div class="news">
         <img src="/builtInAfrica.svg" alt="">
       </div>
@@ -370,16 +370,73 @@
       <p class="text-p">The Igbo API is the most robust, Igbo-English dictionary API that is maintained by our wonderful
         volunteer community.</p>
     </div>
-    <div class="main-info">
-      <div class="stats"></div>
-      <div class="stats"></div>
-      <div class="stats"></div>
-      <div class="stats"></div>
-      <div class="stats"></div>
-      <div class="stats"></div>
-      <div class="stats"></div>
+    <div class="main-info flex">
+
+      <div class="top flex">
+
+        <div class="stats">
+          <p class="num">8,099</p>
+          <p class="txt">Words in the database</p>
+        </div>
+        <div class="stats">
+          <p class="num">3,522</p>
+          <p class="txt">Example Igbo sentences</p>
+        </div>
+        <div class="stats">
+          <p class="num">1,843</p>
+          <p class="txt">Words audio pronunciations</p>
+        </div>
+
+      </div>
+
+      <div class="middle flex">
+        <div class="stats">
+          <p class="num">1,264</p>
+          <p class="txt">Standard Igbo words</p>
+        </div>
+      </div>
+
+      <div class="buttom flex">
+
+        <div class="stats" style="height: auto;">
+          <p class="num">18</p>
+          <p class="txt">GitHub contributors </p>
+          <div class="images">
+            <img src="images/img1.svg" alt="team membes github profile photo">
+            <img src="images/img2.svg" alt="team membes github profile photo">
+            <img src="images/img3.svg" alt="team membes github profile photo">
+            <img src="images/img4.svg" alt="team membes github profile photo">
+            <img src="images/img5.svg" alt="team membes github profile photo">
+            <img src="images/img6.svg" alt="team membes github profile photo">
+            <img src="images/img7.svg" alt="team membes github profile photo">
+            <img src="images/img8.svg" alt="team membes github profile photo">
+            <img src="images/img9.svg" alt="team membes github profile photo">
+            <img src="images/img10.svg" alt="team membes github profile photo">
+          </div>
+        </div>
+        <div class="stats">
+          <p class="num">100+</p>
+          <p class="txt">members in slack</p>
+        </div>
+        <div class="stats">
+          <p class="num">96</p>
+          <p class="txt">GitHub stars</p>
+        </div>
+      </div>
+
     </div>
   </section>
+  <section class="section-6 flex">
+    <p>Like what you see? Register for an API key!</p>
+    <a href="#">Get an API Key</a>
+  </section>
+  <footer>
+    <div class="links">
+      <img src="" alt="">
+      <img src="" alt="">
+    </div>
+    <p>Copyright &copy; 2022 Igbo Api</p>
+  </footer>
 </body>
 
 </html>

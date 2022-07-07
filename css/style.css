@@ -13,6 +13,10 @@ body {
     font-size: 62.5%;
 }
 
+.flex{
+    display: flex;
+}
+
 :root {
     --c1: #1A202C;
     --c2: #1f2937;
@@ -59,7 +63,6 @@ a {
 }
 /* navbar */
 nav {
-    display: flex;
     justify-content: space-between;
     margin: 3em 2.8125em 0;
     align-content: center;
@@ -93,7 +96,6 @@ nav {
 }
 
 nav .nav-menu {
-    display: flex;
     /* align-content: center; */
     width: 550px;
     justify-content: space-between;
@@ -117,7 +119,6 @@ nav .nav-menu #try-it {
     height: 44px;
     width: 111px;
     background: #22C55E;
-    display: flex;
     border-radius: 43px;
 }
 
@@ -142,7 +143,6 @@ nav .nav-menu .dropdown #main-btn {
     background: none;
     border: none;
     width: 44px;
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
@@ -153,7 +153,6 @@ nav .nav-menu .dropdown #main-btn svg {
 }
 
 nav .nav-menu .dropdown-content {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     visibility: hidden;
@@ -175,7 +174,6 @@ nav .nav-menu .dropdown-content {
 nav .nav-menu .dropdown-content button {
     width: 100%;
     position: relative;
-    display: flex;
     font-family: var(--mf);
     color: var(--c1);
     font-weight: 500;
@@ -231,7 +229,6 @@ nav .nav-menu li a:hover {
 /* body - main theme */
 .section-1 {
     margin-top: 80px;
-    display: flex;
     padding: 0 30px;
     max-height: 415px;
     justify-content: space-between;
@@ -243,7 +240,7 @@ nav .nav-menu li a:hover {
 }
 
 .section-1 .theme h1 {
-    font-family: airbnb cereal;
+    font-family: var(--mf);
     font-size: 60px;
     font-weight: 700;
     width: 413px;
@@ -255,7 +252,7 @@ nav .nav-menu li a:hover {
 }
 
 .section-1 .theme p {
-    font-family: mada;
+    font-family:var(--sf);
     font-size: 16px;
     margin: 20px 0 35px;
     font-weight: 400;
@@ -265,7 +262,7 @@ nav .nav-menu li a:hover {
 
 /* links */
 .section-1 .theme .links a {
-    font-family: airbnb cereal;
+    font-family: var(--mf);
     font-size: 20px;
     font-weight: 600;
     width: 257px;
@@ -312,7 +309,6 @@ nav .nav-menu li a:hover {
 .section-2 .features-list {
     min-width: 1263px;
     margin: 70px auto 0;
-    display: flex;
     justify-content: space-between;
 }
 
@@ -323,7 +319,6 @@ nav .nav-menu li a:hover {
     border-radius: 50px 0 50px 0;
     background: #E5E7EB;
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.05);
-    display: flex;
     flex-direction: column;
 }
 
@@ -361,7 +356,7 @@ nav .nav-menu li a:hover {
 .section-2 .features-list .feature div:nth-child(2) {
     margin: 24px auto auto;
     width: 196px;
-    font-family: mada;
+    font-family:var(--sf);
     color: #1A202C;
     font-size: 16px;
 }
@@ -386,7 +381,6 @@ nav .nav-menu li a:hover {
     height: 508px;
     padding: 2%;
     width: 95%;
-    display: flex;
     justify-content: space-between;
 }
 
@@ -431,14 +425,12 @@ nav .nav-menu li a:hover {
 }
 
 .section-3 .test .input form .select {
-    display: flex;
     width: 35%;
     justify-content: space-between;
     margin: 2.5% 0 0;
 }
 
 .section-3 .test .input form .select .option {
-    display: flex;
     width: fit-content;
     align-items: center;
 }
@@ -485,7 +477,6 @@ nav .nav-menu li a:hover {
     margin: 160px 70px 0;
 }
 .section-4 .mentioned-in{
-    display: flex;
     width: 95%;
     justify-content: space-between;
     margin: 4% auto 0;
@@ -495,11 +486,99 @@ nav .nav-menu li a:hover {
 /**
 *Section 5
 */
-.section-5{
+.section-5 .text{
     margin: 160px 70px 0;
 }
 
 .section-5 .main-info{
-    height: 200vh;
+    height: fit-content;
     background: #DAEDAE;
+    margin-top: 7.2em;
+    flex-direction: column;
+}
+
+.section-5 .main-info .top{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10.7em;
+}
+
+.section-5 .main-info .stats{
+    height: 264px;
+    width:271px;
+    padding: 3% 0 ;
+    box-sizing: border-box;
+    background-color: #188859;
+    display: flex;
+    place-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius:60px 0 60px 60px ;
+}
+
+.section-5 .main-info .stats .num{
+    font-size: 5em;
+    font-family: segoe ui;
+    font-weight: bold;
+    color: #DAEDAE;
+}
+
+.section-5 .main-info .stats .txt{
+    font-size: 2em;
+    font-family: var(--mf);
+    font-weight: medium;
+    color: #DAEDAE;
+}
+
+.section-5 .main-info .middle{
+    margin-top: 10.7em;
+    justify-content: space-around;
+}
+
+
+.section-5 .main-info .stats .images{
+    flex-direction: column;
+    width: 90%;
+    margin-top: 4em;
+    place-self: center;
+}
+
+.section-5 .main-info .stats .images img{
+    margin: 0 1em 1em 0;
+}
+
+.section-5 .main-info .buttom{
+    margin: 10.7em 0;
+    justify-content: space-around;
+}
+
+
+/**
+*Section 6
+*/
+
+.section-6{
+    min-height: 300px;
+    background-color: var(--c1);
+    padding: 7.5% 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.section-6 p{
+    font-family:var(--sf);
+    font-size: 2.4em;
+}
+
+.section-6 a{
+    font-family:var(--mf);
+    color: #FFFFFF;
+    background: var(--c4);
+    padding: .5em 1.5em;
+    font-weight: 700;
+    border-radius: 5em;
+    font-size: 2em;
 }
