@@ -1,0 +1,63 @@
+/* resets and global */
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    scroll-behavior: smooth;
+    /* outline: 1px solid red; */
+}
+
+body {
+    font-size: 62.5%;
+}
+
+.flex{
+    display: flex;
+}
+
+:root {
+    --c1: #1A202C;
+    --c2: #1f2937;
+    --c3: #F2F7FF;
+    --c4: #22C55E;
+    --mf: airbnb cereal;
+    --sf: mada;
+    --test: 95px 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--mf);
+}
+
+p,
+a {
+    font-family: var(--sf);
+}
+
+.text-header {
+    font-family: var(--mf);
+    color: var(--c4);
+    font-size: 3.5em;
+    font-weight: 700;
+}
+
+.text-p {
+    font-family: var(--sf);
+    font-size: 1.6em;
+    margin-top: 25px;
+    font-weight: normal;
+    color: var(--c1);
+}
+
+.text {
+    width: 740px;
+}
+
+.landing{
+    height: 100vh;
+}

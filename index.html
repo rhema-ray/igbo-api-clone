@@ -5,21 +5,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Igbo API The First African Language API</title>
-  <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇳🇬</text></svg>">
+  <title>Igbo API - The First African Language API</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇳🇬</text></svg>">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/nav.css">
 </head>
 
 <body>
 
   <!-- navigation bar -->
   <nav class="flex">
-    <h1 class="logo"><span id="igbo">igbo</span>API</h1>
+    <a class="logo" href="index.html"><span id="igbo">igbo</span>API</a>
     <div class="nav-menu flex">
-      <li><a href="#features">Feature</a></li>
-      <li><a href="">About</a></li>
+      <li><a href="/index.html#features">Feature</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="">Docs</a></li>
       <li><a href="">Get an API Key</a></li>
       <li id="try-it" class="flex"><a href="">Try it Out</a></li>
@@ -203,7 +204,7 @@
 
   <!-- next page -->
   <section class="section-2">
-    <div class="text">
+    <div class="text" id="features">
       <h1 class="text-header">Features</h1>
       <p class="text-p">Existing as an open-source project, the Igbo API aims to change this by making the process of
         learning Igbo
@@ -211,7 +212,7 @@
     </div>
 
     <!-- features list parent div -->
-    <div class="features-list flex" id="features">
+    <div class="features-list flex">
       <div class="feature flex">
         <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="42.264" height="37.784"
             viewBox="0 0 42.264 37.784">
@@ -428,12 +429,26 @@
   </section>
   <section class="section-6 flex">
     <p>Like what you see? Register for an API key!</p>
-    <a href="#">Get an API Key</a>
+    <a href="#" class="key">Get an API Key</a>
   </section>
-  <footer>
-    <div class="links">
-      <img src="" alt="">
-      <img src="" alt="">
+  <footer class="flex">
+    <div class="links flex">
+
+      <a href="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32.147" height="31.354" viewBox="0 0 32.147 31.354">
+            <path id="github"
+              d="M20.073,4a16.075,16.075,0,0,0-5.08,31.325c.806.147,1.1-.345,1.1-.774,0-.382-.016-1.392-.021-2.731-4.473.968-5.415-2.156-5.415-2.156a4.281,4.281,0,0,0-1.784-2.355c-1.46-.994.11-.973.11-.973A3.376,3.376,0,0,1,11.44,27.99a3.425,3.425,0,0,0,4.678,1.339,3.459,3.459,0,0,1,1.02-2.15c-3.568-.4-7.32-1.784-7.32-7.942a6.23,6.23,0,0,1,1.653-4.317,5.8,5.8,0,0,1,.157-4.254s1.35-.429,4.421,1.648a15.291,15.291,0,0,1,8.047,0c3.071-2.077,4.416-1.648,4.416-1.648a5.753,5.753,0,0,1,.162,4.254,6.2,6.2,0,0,1,1.648,4.317c0,6.174-3.757,7.529-7.335,7.932a3.827,3.827,0,0,1,1.088,2.972c0,2.15-.016,3.882-.016,4.411,0,.429.288.931,1.1.774A16.077,16.077,0,0,0,20.073,4Z"
+              transform="translate(-4 -4)" fill="#6a717f" fill-rule="evenodd" />
+          </svg>
+      </a>
+
+      <a href="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30.236" height="20.157" viewBox="0 0 30.236 20.157">
+            <path id="mail-bulk-solid"
+              d="M2.5,16.5V36.657H32.736V16.5Zm3.207,1.832H29.529v2.04L18.462,27.251a1.607,1.607,0,0,1-1.689,0L5.707,20.376Zm23.822,4.524V34.825H5.707V22.86l9.13,5.673a5.2,5.2,0,0,0,5.558,0Z"
+              transform="translate(-2.5 -16.5)" fill="#6a717f" />
+          </svg>
+      </a>
     </div>
     <p>Copyright &copy; 2022 Igbo Api</p>
   </footer>
